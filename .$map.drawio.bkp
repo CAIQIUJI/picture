@@ -1,0 +1,137 @@
+<mxfile host="Electron" modified="2024-08-27T14:33:28.392Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="LguQn2nUra4ssv4NqJH4" version="21.2.1" type="device">
+  <diagram name="第 1 页" id="_upn6OfPotPVupsO9SON">
+    <mxGraphModel dx="1340" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-1" value="&lt;h3&gt;1. &lt;strong&gt;开始&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;程序启动，进入 &lt;code&gt;main&lt;/code&gt; 函数。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;2. &lt;strong&gt;初始化与定义&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;定义并初始化 &lt;code&gt;KeyValue&lt;/code&gt; 结构体数组 &lt;code&gt;kv&lt;/code&gt;，用于存储键值对。&lt;/li&gt;&lt;li&gt;定义哈希函数 &lt;code&gt;hash()&lt;/code&gt; 用于生成键的索引。&lt;/li&gt;&lt;li&gt;定义 &lt;code&gt;insert()&lt;/code&gt; 函数用于插入或更新键值对。&lt;/li&gt;&lt;li&gt;定义 &lt;code&gt;find()&lt;/code&gt; 函数用于查找键对应的值。&lt;/li&gt;&lt;li&gt;定义 &lt;code&gt;free_kv()&lt;/code&gt; 函数用于释放内存。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;3. &lt;strong&gt;解析命令行参数&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;在 &lt;code&gt;main&lt;/code&gt; 函数中，循环遍历命令行参数：&lt;ul&gt;&lt;li&gt;检查是否为长选项（&lt;code&gt;--key&lt;/code&gt; 格式）。&lt;/li&gt;&lt;li&gt;提取选项的键名和对应的值。&lt;/li&gt;&lt;li&gt;调用 &lt;code&gt;insert()&lt;/code&gt; 函数，将键值对插入哈希表。&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;4. &lt;strong&gt;插入键值对&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;调用 &lt;code&gt;insert()&lt;/code&gt; 函数：&lt;ul&gt;&lt;li&gt;使用 &lt;code&gt;hash()&lt;/code&gt; 函数生成键的索引。&lt;/li&gt;&lt;li&gt;检查索引处是否已有键存在：&lt;ul&gt;&lt;li&gt;若不存在，则分配内存并插入新键值对。&lt;/li&gt;&lt;li&gt;若存在，则释放旧值并更新为新值。&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;5. &lt;strong&gt;打印所有键值对&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;遍历哈希表 &lt;code&gt;kv&lt;/code&gt;，打印所有存储的键值对。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;6. &lt;strong&gt;清理内存&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;调用 &lt;code&gt;free_kv()&lt;/code&gt; 函数，释放所有动态分配的内存。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;7. &lt;strong&gt;结束&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;程序结束，返回 &lt;code&gt;0&lt;/code&gt;。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;这个流程图可以帮助理解代码的执行顺序和逻辑结构，特别是对键值对的存储、查找以及内存管理的处理&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="267" y="-350" width="560" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-3" value="按文件大小得到每个线程处理的分块大小" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="302.5" y="1080" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-4" value="初始化&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;KeyValue&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;结构体数组&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;kv&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;，用于存储键值对&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="430" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="aWycm-KVQd_OkAFnVMvl-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.5000000000002" y="1290" as="sourcePoint" />
+            <mxPoint x="447.5" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aWycm-KVQd_OkAFnVMvl-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.5" y="1380" as="sourcePoint" />
+            <mxPoint x="447.5" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-8" value="将线程组的结束位置移至末尾&lt;br&gt;下一线程的开始位置为上一线程的下一位" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="1320" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-9" value="各线程进行文件处理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="1470" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.5" y="1440" as="sourcePoint" />
+            <mxPoint x="447.5" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.969;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aWycm-KVQd_OkAFnVMvl-16" target="aWycm-KVQd_OkAFnVMvl-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="1260" as="sourcePoint" />
+            <mxPoint x="660" y="1430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="1260" />
+              <mxPoint x="670" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-12" value="按分块大小初始化线程组的文件开始位置和结束位置" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1160" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.33" y="1130" as="sourcePoint" />
+            <mxPoint x="447.33" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.33" y="1200" as="sourcePoint" />
+            <mxPoint x="447.33" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-15" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-16" value="判断各线程的结束位置是否为行尾" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="1230" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.86" y="400" as="sourcePoint" />
+            <mxPoint x="449.86" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-18" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1290" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-19" value="合并各线程的数据输出文件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="368.75" y="1540" width="157.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-20" value="管理线程容器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="1400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-21" value="等待各线程完成其工作" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1610" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aWycm-KVQd_OkAFnVMvl-19" target="aWycm-KVQd_OkAFnVMvl-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="1580" as="sourcePoint" />
+            <mxPoint x="445" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-23" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="1680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aWycm-KVQd_OkAFnVMvl-21" target="aWycm-KVQd_OkAFnVMvl-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="523.75" y="1620" as="sourcePoint" />
+            <mxPoint x="573.75" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aWycm-KVQd_OkAFnVMvl-9" target="aWycm-KVQd_OkAFnVMvl-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="1620" as="sourcePoint" />
+            <mxPoint x="580" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-26" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1230" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-28" value="定义哈希函数&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;hash()&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;用于生成键的索引&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="500" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-29" value="定义&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;insert()&lt;/code&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp;函数用于插入或更新键值对&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="570" width="282.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-30" value="获取文件大小" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1010" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-34" value="定义&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left; background-color: initial;&quot;&gt;find()&lt;/code&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp;函数用于查找键对应的值&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="640" width="282.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-35" value="i &amp;gt;=1 &amp;amp; i &amp;lt; 用户输入的参数数量" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="710" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-37" value="检查是否为选项&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="800" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWycm-KVQd_OkAFnVMvl-38" value="检查是否为选项&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="870" width="165" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

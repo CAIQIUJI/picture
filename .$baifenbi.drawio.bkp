@@ -1,0 +1,75 @@
+<mxfile host="Electron" modified="2024-08-27T15:07:37.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="Qp9Z-h1nxfor79h7kngA" version="21.2.1" type="device">
+  <diagram name="第 1 页" id="wICu6Y99JHlKvBJ5HBA7">
+    <mxGraphModel dx="447" dy="270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-1" value="输出当前进度信息和相关错误位/行信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="450" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-2" value="根据文件指针的位置信息计算当前百分比数（取整）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="280" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="504.83" y="500" as="sourcePoint" />
+            <mxPoint x="504.83" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-5" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-6" value="初始化int型的上一个百分比数和当前百分比数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="210" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-7" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="530" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ANy5fZbM00t0vNPCGWCt-6" target="ANy5fZbM00t0vNPCGWCt-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="515" y="330" as="sourcePoint" />
+            <mxPoint x="515" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ANy5fZbM00t0vNPCGWCt-5" target="ANy5fZbM00t0vNPCGWCt-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="340" as="sourcePoint" />
+            <mxPoint x="525" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-11" value="是否大于上一百分比数" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="350" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ANy5fZbM00t0vNPCGWCt-11" target="ANy5fZbM00t0vNPCGWCt-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="410" as="sourcePoint" />
+            <mxPoint x="510" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-15" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="420" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ANy5fZbM00t0vNPCGWCt-11" target="ANy5fZbM00t0vNPCGWCt-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="378" as="sourcePoint" />
+            <mxPoint x="590" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="380" />
+              <mxPoint x="630" y="330" />
+              <mxPoint x="505" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-18" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="390" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ANy5fZbM00t0vNPCGWCt-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ANy5fZbM00t0vNPCGWCt-2" target="ANy5fZbM00t0vNPCGWCt-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="370" as="sourcePoint" />
+            <mxPoint x="590" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
