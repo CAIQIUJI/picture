@@ -1,0 +1,85 @@
+<mxfile host="Electron" modified="2024-08-27T14:00:51.145Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="oNel5fTwUiyxaCICfzXS" version="21.2.1" type="device">
+  <diagram name="第 1 页" id="Rehs_RWKuDIFWq8Jdfnn">
+    <mxGraphModel dx="1340" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-1" value="文件记录行中提取&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;byteCount&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;、&lt;/span&gt;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;hexAddress、&lt;code style=&quot;border-color: var(--border-color);&quot;&gt;data、&lt;/code&gt;&lt;br&gt;&lt;/code&gt;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;recordType&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="350" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-2" value="将值累加到&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;sum&lt;/code&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="500" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-3" value="初始化&lt;code style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;sum&lt;/code&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&lt;/span&gt;变量为 0&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="280" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="P49dobZ90kQ6xjwSlYbk-3" target="P49dobZ90kQ6xjwSlYbk-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="450" as="sourcePoint" />
+            <mxPoint x="720" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P49dobZ90kQ6xjwSlYbk-2" target="P49dobZ90kQ6xjwSlYbk-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="510" as="sourcePoint" />
+            <mxPoint x="505" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-6" value="补码与校验码数值&lt;br&gt;是否相等" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="650" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P49dobZ90kQ6xjwSlYbk-8" target="P49dobZ90kQ6xjwSlYbk-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="505" y="630" as="sourcePoint" />
+            <mxPoint x="680" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-8" value="计算出 &lt;code&gt;sum&lt;/code&gt; 的补码" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="570" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-9" value="输出文件类型行的数据部分" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="740" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="P49dobZ90kQ6xjwSlYbk-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="502.26" y="730" as="sourcePoint" />
+            <mxPoint x="505" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-11" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="507.5" y="710" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="P49dobZ90kQ6xjwSlYbk-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="582.5" y="700" as="sourcePoint" />
+            <mxPoint x="658" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="658" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-13" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="710" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-14" value="校验下一行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="607.5" y="740" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-15" value="将字符转十六进制值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="430" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="504.83" y="400" as="sourcePoint" />
+            <mxPoint x="504.83" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P49dobZ90kQ6xjwSlYbk-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="504.83" y="470" as="sourcePoint" />
+            <mxPoint x="504.83" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
