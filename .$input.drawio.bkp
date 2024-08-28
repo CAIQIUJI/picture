@@ -1,0 +1,178 @@
+<mxfile host="Electron" modified="2024-08-28T13:08:38.261Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="QkJCOqAWJXKwAgNFruV5" version="21.2.1" type="device">
+  <diagram name="第 1 页" id="QUAYxFK31PINrBg_Fn15">
+    <mxGraphModel dx="917" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q6mmMbfiY8iSvc2u-293-1" value="i &amp;gt;=1 &amp;amp; i &amp;lt; 用户输入的参数数量" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="710" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-2" value="检查是否为选项&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="800" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-1" target="q6mmMbfiY8iSvc2u-293-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="770" as="sourcePoint" />
+            <mxPoint x="380" y="1030" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="740" />
+              <mxPoint x="280" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="680" as="sourcePoint" />
+            <mxPoint x="450" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-5" value="输入" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="401.87" y="640" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-6" value="提取选项的键名和对应的值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="1010" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1050" as="sourcePoint" />
+            <mxPoint x="450" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-8" value="是否有输入文件" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-9" value="根据输入文件名得到日志文件名和数据文件名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1170" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.26" y="1160" as="sourcePoint" />
+            <mxPoint x="450" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-11" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="452.5" y="1140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="527.5" y="1130" as="sourcePoint" />
+            <mxPoint x="603" y="1170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="603" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-13" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="1140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-14" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1170" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-15" value="是否有输入选项" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-16" value="根据用户的选项设置" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1340" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447.26" y="1330" as="sourcePoint" />
+            <mxPoint x="450" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-18" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="452.5" y="1310" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="527.5" y="1300" as="sourcePoint" />
+            <mxPoint x="603" y="1340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="603" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-20" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="1310" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="1220" as="sourcePoint" />
+            <mxPoint x="450" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-22" value="使用默认选项" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1340" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="q6mmMbfiY8iSvc2u-293-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="1350" as="sourcePoint" />
+            <mxPoint x="520" y="1450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="1420" />
+              <mxPoint x="520" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="585" y="1390" as="sourcePoint" />
+            <mxPoint x="520" y="1450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="585" y="1420" />
+              <mxPoint x="520" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-25" value="&lt;div style=&quot;text-align: left;&quot;&gt;使用&amp;nbsp;&lt;code style=&quot;border-color: var(--border-color);&quot;&gt;hash()&lt;/code&gt;&amp;nbsp;函数生成键的索引&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="870" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-26" value="&lt;div style=&quot;text-align: left;&quot;&gt;分配内存并插入新键值对&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="940" width="165" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71000000000004" y="770" as="sourcePoint" />
+            <mxPoint x="449.71000000000004" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="840" as="sourcePoint" />
+            <mxPoint x="449.71" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.71" y="910" as="sourcePoint" />
+            <mxPoint x="449.71" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="448.46" y="980" as="sourcePoint" />
+            <mxPoint x="448.46" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-31" value="释放所有动态分配的内存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1450" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="1490" as="sourcePoint" />
+            <mxPoint x="520" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-33" value="运行程序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1520" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-34" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="770" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6mmMbfiY8iSvc2u-293-35" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="710" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
